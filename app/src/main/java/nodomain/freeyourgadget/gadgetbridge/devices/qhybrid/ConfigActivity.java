@@ -61,7 +61,6 @@ import nodomain.freeyourgadget.gadgetbridge.service.devices.qhybrid.QHybridSuppo
 import nodomain.freeyourgadget.gadgetbridge.service.devices.qhybrid.adapter.fossil.FossilWatchAdapter;
 import nodomain.freeyourgadget.gadgetbridge.service.devices.qhybrid.buttonconfig.ConfigPayload;
 import nodomain.freeyourgadget.gadgetbridge.service.devices.qhybrid.requests.fossil.FossilRequest;
-import nodomain.freeyourgadget.gadgetbridge.service.devices.qhybrid.requests.misfit.PlayNotificationRequest;
 import nodomain.freeyourgadget.gadgetbridge.util.GB;
 
 public class ConfigActivity extends AbstractGBActivity {
@@ -403,7 +402,6 @@ public class ConfigActivity extends AbstractGBActivity {
                     }else{
                         buttonConfig_ = new JSONArray(buttonJson);
                     }
-					
                     final JSONArray buttonConfig = buttonConfig_;
 
                     LinearLayout buttonLayout = findViewById(R.id.buttonConfigLayout);
@@ -417,7 +415,7 @@ public class ConfigActivity extends AbstractGBActivity {
                         final int currentIndex = i;
                         String configName = buttonConfig.getString(i);
                         TextView buttonTextView = new TextView(ConfigActivity.this);
-                        buttonTextView.setTextColor(Color.WHITE);
+                        buttonTextView.setTextColor(Color.BLUE);
                         buttonTextView.setTextSize(20);
                         try {
                             ConfigPayload payload = ConfigPayload.valueOf(configName);

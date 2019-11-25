@@ -225,7 +225,6 @@ public class QHybridSupport extends QHybridBaseSupport {
                                     (short) (progress * 180),
                                     PlayNotificationRequest.VibrationType.NO_VIBE
                             ));
-                            //GB.toast("Setting activity hand to " + progress, Toast.LENGTH_LONG, GB.INFO); //Only for testing
                         } catch (Exception e) {
                             e.printStackTrace();
                             logger.debug("trash extra should be number 0.0-1.0");
