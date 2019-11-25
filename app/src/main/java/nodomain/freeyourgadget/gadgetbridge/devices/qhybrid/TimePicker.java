@@ -59,7 +59,7 @@ public class TimePicker extends AlertDialog.Builder {
     }
 
     private void initGraphics(Context context){
-        int w = (int) (((WindowManager) context.getApplicationContext().getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay().getWidth() * 0.8);
+        int w = (int) (((WindowManager) context.getApplicationContext().getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay().getWidth() * 0.7);
         height = w;
         width = w;
         radius = (int) (w * 0.06);
